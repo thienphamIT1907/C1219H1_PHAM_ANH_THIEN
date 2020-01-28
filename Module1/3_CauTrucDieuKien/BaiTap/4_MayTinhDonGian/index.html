@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <link rel="stylesheet" href="some-css.css">
+
+</head>
+<body>
+<div id="container">
+    <table id="buttons-area">
+        <tr>
+            <td colspan="4">
+                <input type="text" name="display" id="display" disabled placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="1" value="1" class="button-detail" onclick="processing(value)"></td>
+            <td><input type="button" name="2" value="2" class="button-detail" onclick="processing(value)"></td>
+            <td><input type="button" name="3" value="3" class="button-detail" onclick="processing(value)"></td>
+            <td><input type="button" class="button-detail" name="addition" value="+" onclick="processing(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="4" value="4" class="button-detail" onclick="processing(value)"></td>
+            <td><input type="button" name="5" value="5" class="button-detail" onclick="processing(value)"></td>
+            <td><input type="button" name="6" value="6" class="button-detail" onclick="processing(value)"></td>
+            <td><input type="button" class="button-detail" name="subtraction" value="-" onclick="processing(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="seven" value="7" class="button-detail" onclick="processing(value)"></td>
+            <td><input type="button" name="eight" value="8" class="button-detail" onclick="processing(value)"></td>
+            <td><input type="button" name="nine" value="9" class="button-detail" onclick="processing(value)"></td>
+            <td><input type="button" class="button-detail" name="mutiple" value="*"  onclick="processing(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="button-detail" id="clear" name="clear" value="C" onclick="reset()"></td>
+            <td><input type="button" class="button-detail" name="0" value="0" onclick="processing(value)"></td>
+            <td><input type="button" class="button-detail" name="equal" value="=" onclick="show()"></td>
+            <td><input type="button" class="button-detail" name="division" value="/" onclick="processing(value)"></td>
+        </tr>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

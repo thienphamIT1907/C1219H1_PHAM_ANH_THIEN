@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+    <style>
+        #register-form fieldset label span {
+            font-weight: bold;
+        }
+        #register-form fieldset label input {
+            padding: 5px;
+        }
+        #total-pay {
+            background: lightblue;
+            box-shadow: 1px 1px 15px 1px tomato;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        /*#show-infomation {*/
+        /*    display: none;*/
+        /*}*/
+        /*#show-giatien {*/
+        /*    background: lightblue;*/
+        /*    padding: 10px;*/
+        /*    font-weight: bold;*/
+        /*    font-size: 20px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <form action="#" id="register-form">
+        <fieldset>
+            <legend><h1>ĐĂNG KÍ THÔNG TIN KHÁCH HÀNG</h1></legend>
+                <label>
+                    <span>Tên</span> <br/>
+                    <input type="text" name="ten"  id="input-name" value="Phạm Anh Thiện">
+                </label>
+                <br/>
+                <label>
+                    <span>CMND</span> <br/>
+                    <input type="text" name="cmnd"  id="input-cmnd" value="123456789">
+                </label>
+                <br/>
+                <label>
+                    <span>Ngày sinh</span> <br/>
+                    <input type="date" name="ngay-sinh" id="input-date">
+                </label>
+                <br/>
+                <label>
+                    <span>Email</span> <br/>
+                    <input type="email" name="email" id="input-email" value="princecooldn96@gmail.com">
+                </label>
+                <br/>
+                <label>
+                    <span>Địa chỉ</span> <br/>
+                    <input type="text" name="dia-chi" id="input-address" value="193 Nguyễn Lương Bằng">
+                </label>
+                <br/>
+                <label>
+                    <span>Loại khách hàng</span> <br/>
+                    <select name="loai-khach-hang" id="input-loai-kh">
+                        <option value="Diamond">Kim Cương</option>
+                        <option value="Platinum">Bạch Kim</option>
+                        <option value="gold">Vàng</option>
+                        <option value="Silver">Bạc</option>
+                        <option value="Member">Thành viên</option>
+                    </select>
+                </label>
+                <br/>
+                <label>
+                    <span>Mức giảm giá</span> <br/>
+                    <input type="number" id="input-giam-gia"><i>%</i>
+                </label>
+                <br/>
+                <label>
+                    <span>Số lượng đi kèm</span> <br/>
+                    <input type="number" id="input-so-luong-di-kem" value="2" >
+                </label>
+                <br/>
+                <label>
+                    <span>Số ngày thuê</span> <br/>
+                    <input type="number" id="input-so-ngay-thue">
+                </label>
+                <br/>
+                <label>
+                    <span>Loại dịch vụ</span> <br/>
+                    <select id="input-dich-vu">
+                        <option value="Villa">Villa</option>
+                        <option value="House">House</option>
+                        <option value="Room">Room</option>
+                    </select>
+                </label>
+                <br/>
+                <label>
+                    <span>Loại phòng thuê</span> <br/>
+                    <select id="input-loai-phong">
+                        <option value="Vip">Vip</option>
+                        <option value="Business">Business</option>
+                        <option value="Normal">Normal</option>
+                    </select>
+                </label>
+            <br/>
+        </fieldset>
+        <button type="button" onclick="showInfomation()">Đăng kí</button>
+    </form>
+    <hr/>
+
+    <div id="show-infomation">
+        <div id="title">
+        </div>
+            <div class="content">
+                <ul id="info-list">
+                </ul>
+            </div>
+    </div>
+    <div id="total-pay"></div>
+    <script src="../Task2/showInfo.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Register Form</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="content">
+        <form id="main-form">
+            <div class="header">
+                <h1>Customer Register Form </h1>
+            </div>
+
+            <div class="detail">
+                <input type="text" name="name" id="input-name" value="" placeholder="Enter your name" title="Name"><br/>
+            </div>
+
+            <div class="detail">
+                <input type="text" name="identity-card" id="input-identity-card" value="" placeholder="Enter your Identity Card" title="Identity Card">
+            </div>
+
+            <div class="detail">
+                <input type="date" name="date-of-birth" id="input-date-of-birth" value="" title="Date Of Birth">
+            </div>
+
+            <div class="detail">
+                <input type="email" name="email" id="input-email" value="" placeholder="Enter your Email" title="Email">
+            </div>
+
+            <div class="detail">
+                <input type="text" name="address" id="input-address" placeholder="Enter your Address" title="Address">
+            </div>
+
+            <div class="detail">
+                <select id="customers-type" class="select-title" title="Customers Type" required>
+                    <option value="#">Customer Type...</option>
+                    <option value="Diamond">Diamond</option>
+                    <option value="Platinum">Platinum</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Member">Member</option>
+                </select>
+            </div>
+
+            <div class="detail">
+                <input type="text" name="discount" id="input-discount" value="" placeholder="Choose your Discount Rates (%)" title="Discount Rates">
+            </div>
+
+            <div class="detail">
+                <input type="text" name="amount" id="input-amount" value="" placeholder="Enter your Amount" title="Amount">
+            </div>
+
+            <div class="detail">
+                <input type="text" name="date-hire" id="input-date-of-hire" value="" placeholder="Enter your Date of Hire" title="Date Of Hire">
+            </div>
+
+            <div class="detail">
+                <select id="services-type" class="select-title" title="Services Type" required>
+                    <option value="#">Services Type...</option>
+                    <option value="Villa">Villa</option>
+                    <option value="House">House</option>
+                    <option value="Room">Room</option>
+                </select>
+            </div>
+
+            <div class="detail">
+                <select id="rooms-type" class="select-title" title="Rooms Type" required>
+                    <option value="#">Rooms Type...</option>
+                    <option value="Vip">Vip</option>
+                    <option value="Business">Business</option>
+                    <option value="Normal">Normal</option>
+                </select>
+            </div>
+
+            <div class="button">
+                <button id="register-btn" type="button" onclick="Register()">Register</button>
+                <button id="menu-btn" type="button" onclick="Menu()">Menu</button>
+            </div>
+        </form>
+    </div>
+    <div class="control-button button"></div>
+    <div class="footer"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

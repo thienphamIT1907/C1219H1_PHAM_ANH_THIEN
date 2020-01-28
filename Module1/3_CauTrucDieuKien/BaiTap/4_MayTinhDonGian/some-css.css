@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url('https://images.wallpaperscraft.com/image/mountain_peak_fog_154522_1600x900.jpg') no-repeat;
+    background-attackment: fixed;
+}
+
+#container {
+    background: #96BDC4;
+    height: 350px;
+    width: 460px;
+    position: relative;
+    margin: 150px auto;
+    border-radius: 20px;
+    box-shadow:15px 15px 30px 10px;
+    background: url('https://i.pinimg.com/originals/cb/c2/2c/cbc22ca5a3d7568a742262639a9f6b3f.jpg')
+}
+#buttons-area {
+    height: 90%;
+    width: 90%;
+    margin-left: 25px;
+}
+.button-detail {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Hack, "Fira Code", serif;
+    width: 90%;
+    height: 90%;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px ;
+}
+#display {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top:20px;
+    outline:none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Hack',sans-serif;
+    text-align: right;
+
+
+
+}

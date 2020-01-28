@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://wallpapershome.com/images/pages/pic_h/238.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container {
+    background: #D6A2E8;
+    padding: 100px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px #2C3A47;
+    font-weight: bold;
+    color: #2C3A47;
+    opacity: 0.8;
+}
+
+.container label {
+    text-shadow: 3px 3px 3px grey;
+    color: #833471;
+}
+.check {
+    position: relative;
+}
+
+.check::before {
+    content:'';
+    position: absolute;
+    width: 55px;
+    height: 25px;
+    background-color: #dbdbdb;
+    display: inline-block;
+    top: -10px;
+    left: -30px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+.check::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #eefeff;
+    position: absolute;
+    top: -10px;
+    left: -30px ;
+    border-radius: 25px;
+    transition: 200ms;
+}
+
+.check:checked::after {
+    left: 0;
+    transform: rotateX(180deg);
+    transition: 300ms;
+}
+
+.check:checked::before {
+    background-color: #16a085;
+}

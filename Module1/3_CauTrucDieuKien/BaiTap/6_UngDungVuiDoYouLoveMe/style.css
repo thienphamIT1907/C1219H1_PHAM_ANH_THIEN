@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url('https://wallpaperaccess.com/full/1140733.jpg') no-repeat fixed;
+}
+#container {
+    width: 400px;
+    height: 200px;
+    background: #6B9B90;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px;
+    position: relative;
+}
+#question {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 30px;
+    font-style: italic;
+    position: relative;
+    font-size: 25px;
+    background-color: #CE7870 ;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 5px 5px;
+    font-weight: bold;
+}
+#buttons-area {
+}
+.button {
+    margin-top: 30px;
+    position: absolute;
+    width:100px;
+    height: 40px;
+    left: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+    font-weight: bold;
+    font-family: Hack,sans-serif;
+    font-size: 24px;
+}
+#no-button #yes-button {
+    position: absolute;
+}
+#no-button {
+    margin-left: 222px;
+}
+#yes-button {
+}

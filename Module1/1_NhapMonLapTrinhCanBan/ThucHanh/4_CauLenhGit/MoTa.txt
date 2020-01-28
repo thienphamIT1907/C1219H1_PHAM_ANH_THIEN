@@ -1,0 +1,15 @@
+1. Assign yourself
+    - Giới thiệu hệ thống quản lý vấn đề và gán người quản lý hệ thống quản lý vấn đề
+2. Turn on Github Pages
+3. Close an issue
+    - Đóng vấn đề
+4. Create a branch
+    - Tạo một nhánh phụ mới để giải quyết vấn đề
+5. Commit a file
+    - Chỉnh sửa và commit chi tiết sau khi sửa file
+6. Open a pull request
+    - Tạo một yêu cầu gộp từ branch phụ vào branch chính
+7. Respond to a
+    - Kiểm duyệt yêu cầu
+8. Merge your pull request
+    - Trộn yêu cầu gộp vào branch chính (master) và có thể xoá luôn branch
