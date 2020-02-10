@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fbf45e53-4424-4e26-999c-c1490064463b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/5_Mang/BaiTap/5_LuyenTapMang_1/Bai5_DemNguyenAmTrongChuoi/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/5_Mang/BaiTap/5_LuyenTapMang_1/Bai5_DemNguyenAmTrongChuoi/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +13,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -62,7 +62,19 @@
       <workItem from="1580462137556" duration="1851000" />
       <workItem from="1580532136695" duration="3000" />
       <workItem from="1580545776645" duration="3107000" />
-      <workItem from="1580692726694" duration="4977000" />
+      <workItem from="1580692726694" duration="6165000" />
+      <workItem from="1580779335481" duration="1622000" />
+      <workItem from="1580781851258" duration="1516000" />
+      <workItem from="1580783582171" duration="982000" />
+      <workItem from="1580788152399" duration="3173000" />
+      <workItem from="1580870507812" duration="1951000" />
+      <workItem from="1580896673827" duration="10000" />
+      <workItem from="1580952273554" duration="3195000" />
+      <workItem from="1581127280260" duration="975000" />
+      <workItem from="1581148178829" duration="1348000" />
+      <workItem from="1581294752609" duration="738000" />
+      <workItem from="1581296859047" duration="1155000" />
+      <workItem from="1581301554959" duration="4613000" />
     </task>
     <servers />
   </component>
@@ -70,6 +82,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="605" y="147" key="#com.intellij.ide.util.MemberChooser" timestamp="1581303825870">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="147" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1581303825870" />
+    <state x="480" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580783522122">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="480" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1580783522122" />
     <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1580203396484">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -82,5 +102,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="60" y="4" width="1435" height="787" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1600.860@0.0.1600.860" timestamp="1580203458048" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1581301948444">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1581301948444" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1581304449483">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1581304449483" />
   </component>
 </project>
