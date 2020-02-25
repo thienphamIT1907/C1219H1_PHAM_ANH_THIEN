@@ -21,4 +21,8 @@ public class Manager extends Employee {
     public int getSalary() {
         return this.bonus + super.getSalary();
     }
+
+    public void choice() {
+
+    }
 }
