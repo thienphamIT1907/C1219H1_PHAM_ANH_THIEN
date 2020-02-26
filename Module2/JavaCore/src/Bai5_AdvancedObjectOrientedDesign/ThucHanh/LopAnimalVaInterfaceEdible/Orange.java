@@ -1,0 +1,9 @@
+package Bai5_AdvancedObjectOrientedDesign.ThucHanh.LopAnimalVaInterfaceEdible;
+
+public class Orange extends Fruit {
+
+    @Override
+    public String howToEat() {
+        return "Orange could be juiced";
+    }
+}
