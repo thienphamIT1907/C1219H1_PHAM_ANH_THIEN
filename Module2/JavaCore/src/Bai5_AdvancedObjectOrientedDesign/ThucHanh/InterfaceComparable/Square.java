@@ -1,6 +1,6 @@
-package Bai5_AdvancedObjectOrientedDesign.BaiTap.InterfaceResizeable;
+package Bai5_AdvancedObjectOrientedDesign.ThucHanh.InterfaceComparable;
 
-public class Square extends Rectangle implements Resizeable{
+public class Square extends Rectangle {
     public Square() {
     }
 
@@ -37,14 +37,5 @@ public class Square extends Rectangle implements Resizeable{
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
-    }
-    @Override
-    public void resize(double percent) {
-        System.out.println("Resize of Square changed to: " + percent);
-        System.out.println("Old: "+ " Side: " + this.getSide() + " | area: " + this.getArea());
-        double newSide = this.getSide() + percent;
-        this.setSide(newSide);
-        System.out.println("New: "+ " Side: " + this.getSide() + " | area: " + this.getArea());
-        System.out.println("=============================");
     }
 }

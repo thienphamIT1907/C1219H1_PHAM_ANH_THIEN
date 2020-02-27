@@ -1,6 +1,6 @@
-package Bai5_AdvancedObjectOrientedDesign.BaiTap.InterfaceResizeable;
+package Bai5_AdvancedObjectOrientedDesign.ThucHanh.InterfaceComparable;
 
-public class Rectangle extends Shape implements Resizeable {
+public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -51,18 +51,4 @@ public class Rectangle extends Shape implements Resizeable {
                 + ", which is a subclass of "
                 + super.toString();
     }
-
-    @Override
-    public void resize(double percent) {
-        System.out.println("Resize of Rectangle changed to: " + percent);
-        double newLength = this.getLength() + percent;
-        double newWidth = this.getWidth() + percent;
-        System.out.println("Old: "+ "Width: " + this.getWidth() + " | Length: " + this.getLength() + " | area: " + this.getArea());
-        this.setLength(newLength);
-        this.setWidth(newWidth);
-        System.out.println("New: "+ "length: " + this.getLength() + " | width: " + this.getWidth() + " | area: " + this.getArea());
-        System.out.println("New Area: " + this.getArea());
-        System.out.println("=============================");
-    }
-
 }
