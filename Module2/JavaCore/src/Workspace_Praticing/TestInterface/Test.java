@@ -9,7 +9,9 @@ public class Test {
 
         for (Person per: persons) {
             per.talkByLanguage(lang);
-
         }
+
+        Person a = new Employee();
+
     }
 }

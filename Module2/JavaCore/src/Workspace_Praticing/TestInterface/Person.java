@@ -7,4 +7,5 @@ public abstract class Person implements Language {
     public void talkByLanguage(String language) {
 
     }
+    public void walk() {}
 }
