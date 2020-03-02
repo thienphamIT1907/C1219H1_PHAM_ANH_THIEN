@@ -13,10 +13,10 @@ public abstract class Service {
     public Service() {
     }
 
-    public Service(String id, String nameService, double areUsed, double rentalCosts, int maxNumberOfPeople, String typeRent) {
+    public Service(String id, String nameService, double areaUsed, double rentalCosts, int maxNumberOfPeople, String typeRent) {
         this.id = id;
         this.nameService = nameService;
-        this.areaUsed = areUsed;
+        this.areaUsed = areaUsed;
         this.rentalCosts = rentalCosts;
         this.maxNumberOfPeople = maxNumberOfPeople;
         this.typeRent = typeRent;
@@ -42,8 +42,8 @@ public abstract class Service {
         return areaUsed;
     }
 
-    public void setAreaUsed(double areUsed) {
-        this.areaUsed = areUsed;
+    public void setAreaUsed(double areaUsed) {
+        this.areaUsed = areaUsed;
     }
 
     public double getRentalCosts() {

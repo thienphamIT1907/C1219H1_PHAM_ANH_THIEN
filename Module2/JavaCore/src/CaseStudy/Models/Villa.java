@@ -3,8 +3,8 @@ package CaseStudy.Models;
 public class Villa extends Service {
     private String roomStandard;
     private String convenientDescription;
-    private int numberOfFloors;
     private double areaPool;
+    private int numberOfFloors;
 
     @Override
     public String showInfo() {
@@ -28,11 +28,12 @@ public class Villa extends Service {
     public Villa (
             String id, String nameService, double areUsed, double rentalCosts,
             int maxNumberOfPeople, String typeRent, String roomStandard,
-            String convenientDescription, int numberOfFloors
+            String convenientDescription, double areaPool, int numberOfFloors
     ) {
         super(id, nameService, areUsed, rentalCosts, maxNumberOfPeople, typeRent);
         this.roomStandard = roomStandard;
         this.convenientDescription = convenientDescription;
+        this.areaPool = areaPool;
         this.numberOfFloors = numberOfFloors;
     }
 
@@ -52,19 +53,19 @@ public class Villa extends Service {
         this.convenientDescription = convenientDescription;
     }
 
-    public int getNumberOfFloors() {
-        return numberOfFloors;
-    }
-
-    public void setNumberOfFloors(int numberOfFloors) {
-        this.numberOfFloors = numberOfFloors;
-    }
-
     public double getAreaPool() {
         return areaPool;
     }
 
     public void setAreaPool(double areaPool) {
         this.areaPool = areaPool;
+    }
+
+    public int getNumberOfFloors() {
+        return numberOfFloors;
+    }
+
+    public void setNumberOfFloors(int numberOfFloors) {
+        this.numberOfFloors = numberOfFloors;
     }
 }
