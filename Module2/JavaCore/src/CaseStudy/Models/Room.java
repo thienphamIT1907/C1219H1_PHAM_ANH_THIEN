@@ -6,13 +6,13 @@ public class Room extends Service{
     @Override
     public String showInfo() {
         return (
-            "\nId Service: " + super.getId() +
-            "\nName Service: " + super.getNameService() +
-            "\nArea used: " + super.getAreaUsed() +
-            "\nRental Costs: " + super.getRentalCosts() +
-            "\nMaximum number of people: " + super.getMaxNumberOfPeople() +
-            "\nType rent: " + super.getTypeRent() +
-            "\nFree service: " + this.getFreeService()
+            "\n - Id Service: " + super.getId() +
+            "\n - Name Service: " + super.getNameService() +
+            "\n - Area used: " + super.getAreaUsed() +
+            "\n - Rental Costs: " + super.getRentalCosts() +
+            "\n - Maximum number of people: " + super.getMaxNumberOfPeople() +
+            "\n - Type rent: " + super.getTypeRent() +
+            "\n - Free service: " + this.getFreeService()
         );
     }
 

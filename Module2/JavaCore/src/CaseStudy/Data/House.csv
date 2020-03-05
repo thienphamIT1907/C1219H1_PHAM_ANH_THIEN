@@ -1,3 +1,6 @@
-id,nameService,areaUsed,rentalCosts,maxNumberOfPeople,typeRent,freeService
-151cdef7969e4adb96fd81edce746464,Thien House,123393.0,123.0,4,no rent,no satn,no des,3
-fef7f854b1fc4eb8b3e1dba87df14f86,van House,3991.0,29192.0,4,no,ta,sdea,82
+id,nameService,areaUsed,rentalCosts,maxNumberOfPeople,typeRent,roomStandard,convenientDescription,numberOfFloors
+4d03cb5be6c34c79a8fb2d565d60014c,House4,123.0,123.0,123,123,123,123,123
+2b3563c647454f22b47757105f446261,House 5,123.0,123.0,123,123,123,123,123
+ab0325b1ab37471ca6a2137b06de63ca,HOuse1234,123.0,123.0,123,123,123,123,123
+b3cd03236fb448dfb8040cf4551fb92e,Househouse,123.0,123.0,123,123,123,123,123
+SVHO - 8888,13,123.0,123.0,123,123,123,123,123

@@ -9,23 +9,23 @@ public class Villa extends Service {
     @Override
     public String showInfo() {
         return (
-            "\nId Service: " + super.getId() +
-            "\nName Service: " + super.getNameService() +
-            "\nArea used: " + super.getAreaUsed() +
-            "\nRental Costs: " + super.getRentalCosts() +
-            "\nMaximum number of people: " + super.getMaxNumberOfPeople() +
-            "\nType rent: " + super.getTypeRent() +
-            "\nRoom standard: " + this.getRoomStandard() +
-            "\nConvenient Description: " + this.getConvenientDescription() +
-            "\nArea pool: " + this.getAreaPool() +
-            "\nNumber of floors: " + this.getNumberOfFloors()
+                "\n - Id Service: " + "[" + super.getId() + "]" +
+                        "\n - Name Service: " + "[" + super.getNameService() + "]" +
+                        "\n - Area used: " + "[" + super.getAreaUsed() + "]" +
+                        "\n - Rental Costs: " + "[" + super.getRentalCosts() + "]" +
+                        "\n - Maximum number of people: " + "[" + super.getMaxNumberOfPeople() + "]" +
+                        "\n - Type rent: " + "[" + super.getTypeRent() + "]" +
+                        "\n - Room standard: " + "[" + this.getRoomStandard() + "]" +
+                        "\n - Convenient Description: " + "[" + this.getConvenientDescription() + "]" +
+                        "\n - Area pool: " + "[" + this.getAreaPool() + "]" +
+                        "\n - Number of floors: " + "[" + this.getNumberOfFloors() + "]"
         );
     }
 
     public Villa() {
     }
 
-    public Villa (
+    public Villa(
             String id, String nameService, double areUsed, double rentalCosts,
             int maxNumberOfPeople, String typeRent, String roomStandard,
             String convenientDescription, double areaPool, int numberOfFloors
