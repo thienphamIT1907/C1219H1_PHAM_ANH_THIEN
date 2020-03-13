@@ -11,6 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.TreeSet;
 
 import static CaseStudy.Commons.Config_Services_CSV.MainConfig.*;
 
@@ -84,5 +85,46 @@ public class configRoomCSV {
         }
         assert csvToBean != null;
         return (ArrayList<Room>) csvToBean.parse();
+    }
+
+    public static TreeSet<String> readRoomNotDuplicate(String pathFile) {
+        BufferedReader br = null;
+        TreeSet<String> result = new TreeSet<>();
+        try {
+            String line;
+            br = new BufferedReader(new FileReader(pathFile));
+
+            while((line = br.readLine()) != null) {
+                if(readNameServiceFromFile(line).equals("nameService")) {
+                    continue;
+                }
+                result.add(readNameServiceFromFile(line));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if(br != null) {
+                    br.close();
+                }
+            } catch (IOException crunchifyException) {
+                crunchifyException.printStackTrace();
+            }
+        }
+        //sorted increased
+        return result;
+
+        //sorted decreased
+//        return result.descendingSet();
+    }
+
+    //skip header
+    private static String readNameServiceFromFile(String csvLine) {
+        String name = "";
+        if(csvLine != null) {
+            String[] splitData = csvLine.split(",");
+            name = splitData[1];
+        }
+        return name;
     }
 }

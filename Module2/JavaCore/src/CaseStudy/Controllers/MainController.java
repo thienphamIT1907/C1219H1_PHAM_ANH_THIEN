@@ -8,7 +8,7 @@ import static CaseStudy.Controllers.ServicesController.MainMenu1_AddNewService.a
 import static CaseStudy.Controllers.ServicesController.MainMenu2_ShowService.showServices;
 import static CaseStudy.Controllers.ServicesController.MainMenu3_AddNewCustomer.addNewCustomer;
 import static CaseStudy.Controllers.ServicesController.MainMenu4_ShowCustomerInformation.showCustomerInformation;
-import static CaseStudy.Controllers.ServicesController.MainMenu5_AddNewBooking.addNewBooking;
+import static CaseStudy.Controllers.ServicesController.MainMenu5_AddNewBooking.addNewBookingRoom;
 import static CaseStudy.Controllers.ServicesController.MainMenu6_ShowEmployeeInformation.showEmployeeInformation;
 import static CaseStudy.Controllers.ServicesController.MainMenu7_BookingMovieTicket4D.bookingMovieTicket4D;
 import static CaseStudy.Controllers.ServicesController.MainMenu8_FindEmployee.findEmployee;
@@ -33,10 +33,10 @@ public class MainController {
 
         switch (input.nextInt()) {
             case 1:
-                addNewServices();//done
+                addNewServices();
                 break;
             case 2:
-                showServices();//done
+                showServices();
                 break;
             case 3:
                 addNewCustomer();
@@ -45,7 +45,7 @@ public class MainController {
                 showCustomerInformation();
                 break;
             case 5:
-                addNewBooking();
+                addNewBookingRoom();
                 break;
             case 6:
                 showEmployeeInformation();
@@ -59,7 +59,7 @@ public class MainController {
                 System.exit(-1);
                 break;
             default:
-                System.out.print("Input invalid !");
+                System.out.print("Input invalid ! Please try again: ");
                 backPreviousMenu();
                 break;
         }

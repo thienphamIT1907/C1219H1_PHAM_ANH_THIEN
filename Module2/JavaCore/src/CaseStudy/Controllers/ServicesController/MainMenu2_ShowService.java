@@ -7,13 +7,20 @@ import CaseStudy.Models.House;
 import CaseStudy.Models.Room;
 import CaseStudy.Models.Villa;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.TreeSet;
 
 import static CaseStudy.Controllers.MainController.displayMainMenu;
 import static CaseStudy.Controllers.ServicesController.BackPreviousMenu.backPreviousMenu;
 
-public class MainMenu2_ShowService<E> {
+public class MainMenu2_ShowService {
     private static Scanner input = new Scanner(System.in);
 
     public static void showServices() {
@@ -33,22 +40,25 @@ public class MainMenu2_ShowService<E> {
 
         switch (input.nextInt()) {
             case 1:
-                showAllVilla();//done
+                showAllVilla();
                 break;
             case 2:
-                showAllHouse();//done
+                showAllHouse();
                 break;
             case 3:
-                showAllRoom();//done
+                showAllRoom();
                 break;
             case 4:
                 showAllVillaNotDuplicate();
+                displayMainMenu();
                 break;
             case 5:
                 showAllHouseNotDuplicate();
+                displayMainMenu();
                 break;
             case 6:
                 showAllRoomNotDuplicate();
+                displayMainMenu();
                 break;
             case 7:
                 displayMainMenu();
@@ -102,21 +112,60 @@ public class MainMenu2_ShowService<E> {
         System.out.println();
     }
 
-//    private static void loop(ArrayList<Service> arrayList) {
-//        arrayList.forEach(e -> {
-//            System.out.println(e.showInfo());
-//        });
-//    }
-
     private static void showAllVillaNotDuplicate() {
-
+        String villaPath = "src/CaseStudy/Data/Villa.csv";
+        Path pathVillaFile = Paths.get(villaPath);
+        if (!Files.exists(pathVillaFile)) {
+            try {
+                Writer writer = new FileWriter(villaPath);
+            } catch (IOException e) {
+                System.err.println(e.getMessage());
+            }
+            backPreviousMenu();
+        }
+        TreeSet<String> villaTreeSet = configVillaCSV.readVillaNotDuplicate(villaPath);
+        System.out.println("=================[LIST VILLA NOT DUPLICATE]=================");
+        for(String villa: villaTreeSet) {
+            System.out.println("- " + villa);
+        }
+        System.out.println("============================================================");
     }
 
     private static void showAllHouseNotDuplicate() {
-
+        String housePath = "src/CaseStudy/Data/House.csv";
+        Path pathHouseFile = Paths.get(housePath);
+        if (!Files.exists(pathHouseFile)) {
+            try {
+                Writer writer = new FileWriter(housePath);
+            } catch (IOException e) {
+                System.err.println(e.getMessage());
+            }
+            backPreviousMenu();
+        }
+        TreeSet<String> houseTreeSet = configHouseCSV.readHouseNotDuplicate(housePath);
+        System.out.println("=================[LIST HOUSE NOT DUPLICATE]=================");
+        for(String house: houseTreeSet) {
+            System.out.println("- " + house);
+        }
+        System.out.println("============================================================");
     }
 
     private static void showAllRoomNotDuplicate() {
-
+        String roomPath = "src/CaseStudy/Data/Room.csv";
+        Path pathRoomFile = Paths.get(roomPath);
+        if (!Files.exists(pathRoomFile)) {
+            try {
+                Writer writer = new FileWriter(roomPath);
+            } catch (IOException e) {
+                System.err.println(e.getMessage());
+            }
+            backPreviousMenu();
+        }
+        TreeSet<String> roomTreeset = configRoomCSV.readRoomNotDuplicate(roomPath);
+        System.out.println("=================[LIST ROOM NOT DUPLICATE]=================");
+        for(String room: roomTreeset) {
+            System.out.println("- " + room);
+        }
+        System.out.println("============================================================");
     }
 }

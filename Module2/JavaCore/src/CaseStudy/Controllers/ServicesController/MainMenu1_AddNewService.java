@@ -54,6 +54,8 @@ public class MainMenu1_AddNewService {
         }
     }
 
+
+//  REFACTOR METHOD LATER...
     private static void createService(Service service) {
 //        service.setId(UUID.randomUUID().toString().replace("-", ""));
         input.nextLine();
@@ -82,11 +84,16 @@ public class MainMenu1_AddNewService {
         ));
 
         System.out.print("Enter max number of people: ");
-        service.setMaxNumberOfPeople(input.nextInt());
-        input.nextLine(); //chống trôi lệnh
+        service.setMaxNumberOfPeople(Validation.getValidNumberInteger(
+                0,
+                20,
+                "0 < number < 20, please try again: "
+        ));
 
         System.out.print("Enter type rent: ");
-        service.setTypeRent(input.nextLine());
+        service.setTypeRent(Validation.getValidNameService(
+                "First character must be uppercase, please try again: "
+        ));
     }
 
     private static void addNewVilla() {
@@ -121,20 +128,24 @@ public class MainMenu1_AddNewService {
         createService(house);
 
         System.out.print("Enter room standard: ");
-        house.setRoomStandard(input.nextLine());
+        house.setRoomStandard(Validation.getValidNameService(
+                "First character must be uppercase, please try again: "
+        ));
 
         System.out.print("Enter convenient description: ");
         house.setConvenientDescription(input.nextLine());
 
         System.out.print("Enter number of floors: ");
-        house.setNumberOfFloors(input.nextInt());
+        house.setNumberOfFloors((int) Validation.getValidDoubleNumber(
+                1.0,
+                "Minimize number of floors is 1, please try again: "
+        ));
 
         houseArrayListAdd.add(house);
 
         configHouseCSV.writeHouseCSVFile(houseArrayListAdd);
         System.out.println("--------------------------------------------------------------");
         System.out.println("Add new HOUSE has name " + "[" + house.getNameService().toUpperCase() + "]" + " completed!");
-        input.nextLine();
         backPreviousMenu();
     }
 
@@ -144,7 +155,9 @@ public class MainMenu1_AddNewService {
         createService(room);
 
         System.out.print("Enter room standard: ");
-        room.setFreeService(input.nextLine());
+        room.setFreeService(Validation.getValidFreeService(
+            "massage|karaoke|food|drink|buffet|bbq, please choose again: "
+        ));
 
         roomArrayListAdd.add(room);
 

@@ -1,5 +1,5 @@
 id,nameService,areaUsed,rentalCosts,maxNumberOfPeople,typeRent,roomStandard,convenientDescription,areaPool,numberOfFloors
-58d18a9704804af981785c031ba3198d,haha,123.0,123.0,123,123,123,123,123.0,123
-85f9b4bffc3841fd91dc8ecbc36634ca,hehe2,123.0,123.0,123,123,123,123,123.0,123
-f5d735263d104669b588ac98ee6d7b04,villa final of final infinitie,123.0,123.0,123,123,12,3123,123.0,123
-52d674eaf7dd4b3abfd87290ffd60f5e,ok vila,123.0,123.0,123,123,123,123,123.0,123
+SVVL-0001,Villaone,1000.0,300.0,5,Normal,Normal,Normal,90.0,4
+SVVL-0002,Villatwo,300.0,1200.0,8,Vip,Vip,Vip,1000.0,32
+SVVL-0003,Villathree,900.0,3100.0,10,Supervip,Supervip,Supervip,900.0,70
+SVVL-0003,Villathree,900.0,3100.0,10,Supervip,Supervip,Supervip,900.0,80
