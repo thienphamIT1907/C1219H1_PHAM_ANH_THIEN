@@ -51,6 +51,10 @@ where customernumber = 103;
 delete from customers
 where city = 'Nantes';
 
+use classicmodels;
+
+select city, count(customerName) as soLuong from customers group by city order by soLuong desc;
+
 
 
 
