@@ -562,7 +562,7 @@ INNER JOIN bo_phan ON nhan_vien.id_bo_phan = bo_phan.id_bo_phan
 INNER JOIN hop_dong ON nhan_vien.id_nhan_vien = hop_dong.id_nhan_vien
 WHERE YEAR(hop_dong.ngay_lam_hop_dong) BETWEEN 2018 AND 2019
 GROUP BY nhan_vien.id_nhan_vien
-HAVING so_hop_dong_lap_duoc = 3;
+HAVING so_hop_dong_lap_duoc <= 3;
 
 /*
 	TASK 16:
