@@ -597,16 +597,15 @@ SET FOREIGN_KEY_CHECKS = 1;
 UPDATE khach_hang
 SET khach_hang.id_loai_khach = 1
 WHERE khach_hang.id_loai_khach = 2
-AND EXISTS (
-	SELECT hop_dong.id_khach_hang,
-    sum(dich_vu.chi_phi_thue + (dich_vu_di_kem.don_vi * dich_vu_di_kem.gia)) AS tong_tien_thanh_toan
+AND khach_hang.id_khach_hang in (
+	SELECT hop_dong.id_khach_hang
 	FROM hop_dong
 	INNER JOIN dich_vu ON hop_dong.id_dich_vu = dich_vu.id_dich_vu 
 	INNER JOIN hop_dong_chi_tiet ON hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
 	INNER JOIN dich_vu_di_kem ON hop_dong_chi_tiet.id_dich_vu_di_kem = dich_vu_di_kem.id_dich_vu_di_kem
     WHERE YEAR(hop_dong.ngay_lam_hop_dong) = 2019
 	GROUP BY hop_dong.id_khach_hang
-	HAVING tong_tien_thanh_toan > 10000000
+	HAVING  sum(dich_vu.chi_phi_thue + (dich_vu_di_kem.don_vi * dich_vu_di_kem.gia))  > 10000000
 );
 
 /*
@@ -623,10 +622,26 @@ WHERE EXISTS (
 );
 SET FOREIGN_KEY_CHECKS = 1;
 
-
+-- drop bang de test
 SET FOREIGN_KEY_CHECKS = 0;
 DELETE FROM khach_hang;
 SET FOREIGN_KEY_CHECKS = 1;
+
+-- by Liem
+ALTER TABLE hop_dong_chi_tiet
+DROP FOREIGN KEY fk_id_hop_dong;
+ALTER TABLE hop_dong_chi_tiet ADD CONSTRAINT fk_id_hop_dong FOREIGN KEY(id_hop_dong)
+REFERENCES hop_dong(id_hop_dong) ON DELETE CASCADE;
+
+ALTER TABLE hop_dong
+DROP FOREIGN KEY fk_id_khach_hang;
+ALTER TABLE hop_dong ADD CONSTRAINT fk_id_khach_hang FOREIGN KEY(id_khach_hang)
+REFERENCES khach_hang(id_khach_hang) ON DELETE CASCADE;
+
+delete khach_hang from  khach_hang
+left join hop_dong on  khach_hang.id_khach_hang = hop_dong.id_khach_hang
+left join hop_dong_chi_tiet   on  hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong
+where year(ngay_lam_hop_dong) = 2016;
 
 /*
 	TASK 19:
@@ -634,13 +649,11 @@ SET FOREIGN_KEY_CHECKS = 1;
 */
 UPDATE dich_vu_di_kem
 SET dich_vu_di_kem.gia = dich_vu_di_kem.gia * 2
-WHERE (
-	SELECT 
-		dich_vu_di_kem.id_dich_vu_di_kem,
-        count(hop_dong_chi_tiet.id_hop_dong_chi_tiet) AS so_lan_su_dung
+WHERE id_dich_vu_di_kem in (
+	SELECT hop_dong_chi_tiet.id_dich_vu_di_kem
     FROM hop_dong_chi_tiet
-	GROUP BY dich_vu_di_kem.id_dich_vu_di_kem
-    HAVING so_lan_su_dung > 10
+	GROUP BY hop_dong_chi_tiet.id_dich_vu_di_kem
+    HAVING count(hop_dong_chi_tiet.id_hop_dong_chi_tiet) > 10
 );
 
 /*
