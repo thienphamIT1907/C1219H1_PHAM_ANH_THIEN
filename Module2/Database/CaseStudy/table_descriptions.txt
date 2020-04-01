@@ -1,0 +1,25 @@
+vitri: 
+1	Tong giam doc
+2	Pho giam doc
+3	Thu ki
+4	Truong phong
+5	Nhan vien
+6	Bao ve
+7	Lao cong
+8	Thuc tap sinh
+bophan:
+1	Tong quan ly (CEO)
+2	nhan su
+3	buong phong
+4	nha hang
+5	spa
+6	marketing
+7	ve sinh moi truong
+8	tai chinh
+9	Co so ha tang
+trinhdo:
+1	Dai hoc
+2	Cao dang
+3	Trung cap
+4	Trung hoc pho thong
+5	Khong co trinh do
