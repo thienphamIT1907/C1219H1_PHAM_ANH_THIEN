@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbf45e53-4424-4e26-999c-c1490064463b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/DemoCRUD_Servlet_JSP_JSTL/DemoCRUD_Servlet_JSP_JSTL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/DemoCRUD_Servlet_JSP_JSTL/DemoCRUD_Servlet_JSP_JSTL.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/DemoServlet/DemoServlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/DemoServlet/DemoServlet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/JSP_JSTL/BaiTap/Bai1_HienThiDanhSachKhachHang/Bai1_HienThiDanhSachKhachHang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/JSP_JSTL/BaiTap/Bai1_HienThiDanhSachKhachHang/Bai1_HienThiDanhSachKhachHang.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/JSP_JSTL/BaiTap/Bai2_UngDungCalculator/Bai2_UngDungCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/JSP_JSTL/BaiTap/Bai2_UngDungCalculator/Bai2_UngDungCalculator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai1_TaoWebHienThiThoiGianHeThong/Bai1_TaoWebHienThiThoiGianHeThong.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai1_TaoWebHienThiThoiGianHeThong/Bai1_TaoWebHienThiThoiGianHeThong.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai2_TaoWebDangNhapHienThiLoiChao/Bai2_TaoWebDangNhapHienThiLoiChao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai2_TaoWebDangNhapHienThiLoiChao/Bai2_TaoWebDangNhapHienThiLoiChao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai3_UngDungChuyenDoiTienTe/Bai3_UngDungChuyenDoiTienTe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai3_UngDungChuyenDoiTienTe/Bai3_UngDungChuyenDoiTienTe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai4_UngDungTuDienDonGian/Bai4_UngDungTuDienDonGian.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai4_UngDungTuDienDonGian/Bai4_UngDungTuDienDonGian.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +38,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
   </component>
@@ -80,6 +89,7 @@
       <workItem from="1581384591233" duration="1236000" />
       <workItem from="1581471798723" duration="1647000" />
       <workItem from="1581496003197" duration="2015000" />
+      <workItem from="1586688232725" duration="7000" />
     </task>
     <servers />
   </component>
