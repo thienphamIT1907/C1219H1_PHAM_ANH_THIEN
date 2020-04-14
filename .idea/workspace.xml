@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbf45e53-4424-4e26-999c-c1490064463b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/DemoCRUD_Servlet_JSP_JSTL/DemoCRUD_Servlet_JSP_JSTL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/DemoCRUD_Servlet_JSP_JSTL/DemoCRUD_Servlet_JSP_JSTL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/DemoServlet/DemoServlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/DemoServlet/DemoServlet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/JSP_JSTL/BaiTap/Bai1_HienThiDanhSachKhachHang/Bai1_HienThiDanhSachKhachHang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/JSP_JSTL/BaiTap/Bai1_HienThiDanhSachKhachHang/Bai1_HienThiDanhSachKhachHang.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/JSP_JSTL/BaiTap/Bai2_UngDungCalculator/Bai2_UngDungCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/JSP_JSTL/BaiTap/Bai2_UngDungCalculator/Bai2_UngDungCalculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai1_TaoWebHienThiThoiGianHeThong/Bai1_TaoWebHienThiThoiGianHeThong.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai1_TaoWebHienThiThoiGianHeThong/Bai1_TaoWebHienThiThoiGianHeThong.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai2_TaoWebDangNhapHienThiLoiChao/Bai2_TaoWebDangNhapHienThiLoiChao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai2_TaoWebDangNhapHienThiLoiChao/Bai2_TaoWebDangNhapHienThiLoiChao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai3_UngDungChuyenDoiTienTe/Bai3_UngDungChuyenDoiTienTe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai3_UngDungChuyenDoiTienTe/Bai3_UngDungChuyenDoiTienTe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai4_UngDungTuDienDonGian/Bai4_UngDungTuDienDonGian.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/JavaWeb/TongQuanUngDungWeb/ThucHanh/Bai4_UngDungTuDienDonGian/Bai4_UngDungTuDienDonGian.iml" afterDir="false" />
-    </list>
+    <list default="true" id="fbf45e53-4424-4e26-999c-c1490064463b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +24,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -90,11 +80,12 @@
       <workItem from="1581471798723" duration="1647000" />
       <workItem from="1581496003197" duration="2015000" />
       <workItem from="1586688232725" duration="7000" />
+      <workItem from="1586695854813" duration="132000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="605" y="147" key="#com.intellij.ide.util.MemberChooser" timestamp="1581303825870">
