@@ -1,6 +1,6 @@
 package dao;
 
-import Model.Customer;
+import model.Customer;
 
 import java.util.*;
 
@@ -37,7 +37,6 @@ public class CustomerDao {
     public static Customer updateAndCreateCustomer(Customer customer) {
         listCUSTOMER.put(customer.getId(), customer);
         return customer;
-
     }
 
     public static void deleteCustomer(int customerId) {

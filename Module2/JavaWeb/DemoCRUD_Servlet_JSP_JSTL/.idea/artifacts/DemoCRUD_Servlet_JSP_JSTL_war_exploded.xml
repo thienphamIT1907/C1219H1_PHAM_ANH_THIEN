@@ -2,15 +2,17 @@
   <artifact type="exploded-war" name="DemoCRUD_Servlet_JSP_JSTL:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/DemoCRUD_Servlet_JSP_JSTL_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="DemoCRUD_Servlet_JSP_JSTL/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="DemoCRUD_Servlet_JSP_JSTL" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="taglibs-standard-impl-1.2.5" />
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="DemoCRUD_Servlet_JSP_JSTL/web/Web2" />
+      <element id="javaee-facet-resources" facet="DemoCRUD_Servlet_JSP_JSTL/web/Web" />
     </root>
   </artifact>
 </component>
