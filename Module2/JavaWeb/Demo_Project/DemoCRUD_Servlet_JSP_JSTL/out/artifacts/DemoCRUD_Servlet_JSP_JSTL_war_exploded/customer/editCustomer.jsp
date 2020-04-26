@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Create new customer</title>
+    <title>Edit customer</title>
 </head>
 <body>
 <h1 style="text-align: center">
