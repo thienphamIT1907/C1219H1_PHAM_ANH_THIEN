@@ -5,7 +5,7 @@ import com.demojparepository.demo.models.Customer;
 import java.util.List;
 
 public interface CustomerService {
-    List<Customer> findAll();
+    List<Customer>  findAll();
 
     List<Customer> findById();
 
