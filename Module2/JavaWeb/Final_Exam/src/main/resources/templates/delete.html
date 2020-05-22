@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Discount Event</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'Roboto';
+        }
+        body {
+            width: 85%;
+            margin: 0 auto;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+<h1>Delete Discount Event</h1>
+<p>
+    <a class="btn btn-info" th:href="@{/}">Quay về danh sách Discount Event</a>
+</p>
+<div class="alert alert-dark" role="alert">
+    Bạn chắc chắn muốn xoá Discount Event này ?
+</div>
+<form th:action="@{/delete-discountEvent}" th:object="${discountEvent}" method="post">
+    <div class="form-group">
+        <input th:type="hidden" name="id" th:field="*{id}">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">ID Discount Event</span>
+            </div>
+            <input type="text" class="form-control" th:value="${discountEvent.id}" disabled>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Tiêu đề</span>
+            </div>
+            <input type="text" class="form-control" th:value="${discountEvent.tieuDe}" disabled>
+        </div>
+        <button type="submit" class="btn btn-danger">Xoá</button>
+    </div>
+</form>
+</body>
+</html>

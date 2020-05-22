@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Khuyến mãi</title>
+</head>
+<body>
+<form th:action="@{/search}">
+    <div class="form-row">
+        <div class="form-group col-md-2">
+        </div>
+        <div class="form-group col-md-2">
+            <input type="text" class="form-control" name="mucGiamGia" placeholder="Mức giảm giá" th:value="${mucGiamGia}">
+        </div>
+        <div class="form-group col-md-3">
+            <input type="text" class="form-control" name="thoiGianBatDau" placeholder="Thời gian bắt đầu (dd/MM/yyyy)" th:value="${thoiGianBatDau}">
+        </div>
+        <div class="form-group col-md-3">
+            <input type="text" class="form-control" name="thoiGianKetThuc" placeholder="Thời gian kết thúc (dd/MM/yyyy)" th:value="${thoiGianKetThuc}">
+        </div>
+        <div class="form-group col-md-2">
+            <input type="submit" value="Tìm kiếm" class="btn btn-primary">
+        </div>
+    </div>
+
+</form><br>
+
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Tiêu Đề</th>
+        <th scope="col">Thời gian bắt đầu</th>
+        <th scope="col">Thời gian kết thúc</th>
+        <th scope="col">Mức giảm giá</th>
+        <th scope="col">Chi tiết</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="khuyenMai : ${khuyenMais}">
+        <tr>
+            <td th:text="${khuyenMai.tieuDe}"></td>
+            <td th:text="${khuyenMai.thoiGianBatDau}"></td>
+            <td th:text="${khuyenMai.thoiGianKetThuc}"></td>
+            <td th:text="${khuyenMai.mucGiamGia}"></td>
+            <td th:text="${khuyenMai.chiTiet}"></td>
+        </tr>
+    </th:block>
+    </tbody>
+</table>
+
+<div align="center">
+    <a th:href="@{'/search'(page=${khuyenMais.number - 1}, mucGiamGia=${mucGiamGia}, thoiGianBatDau=${thoiGianBatDau}, thoiGianKetThuc=${thoiGianKetThuc})}" th:if="${khuyenMais.hasPrevious()}" class="badge badge-primary">Previous</a>
+    <span th:if="${khuyenMais.hasContent()}">
+        <span th:text="${khuyenMais.number + 1}"></span>/<span th:text="${khuyenMais.totalPages}"></span>
+    </span>
+    <a th:href="@{'/search'(page=${khuyenMais.number + 1}, mucGiamGia=${mucGiamGia}, thoiGianBatDau=${thoiGianBatDau}, thoiGianKetThuc=${thoiGianKetThuc})}" th:if="${khuyenMais.hasNext()}" class="badge badge-primary">Next</a>
+</div>
+<div align="center">
+    <a th:href="@{/khuyen-mai}" class="btn btn-success" align="">Quay lại</a>
+</div>
+
+</body>
+</html>

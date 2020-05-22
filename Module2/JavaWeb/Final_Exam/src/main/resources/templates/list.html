@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List Discount Event</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'Roboto';
+        }
+        body {
+            width: 85%;
+            margin: 0 auto;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+<h1>Danh sách Discount Event</h1>
+<a class="btn btn-info" th:href="@{/create-discountEvent}">Tạo mới Discount Event</a><br><br>
+
+
+<form th:action="@{/search}" method="get">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Tìm kiếm theo mức giảm giá" name="mucGiamGia">
+        <div class="input-group-append">
+<!--            <button class="btn btn-danger" type="submit">Tìm kiếm</button>-->
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Tìm kiếm theo thời gian bắt đầu" name="tgbd">
+        <div class="input-group-append">
+            <!--            <button class="btn btn-danger" type="submit" th:action="@{/search}">Tìm kiếm</button>-->
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Tìm kiếm theo thời gian kết thúc" name="tgkt">
+        <div class="input-group-append">
+            <!--            <button class="btn btn-danger" type="submit" th:action="@{/search}">Tìm kiếm</button>-->
+        </div>
+    </div>
+    <button class="btn btn-danger" type="submit" th:action="@{/search}">Tìm kiếm</button>
+</form>
+
+
+
+<th:block th:if="${message}">
+    <div class="alert alert-success" role="alert">
+        <p th:text="${message}"></p>
+    </div>
+</th:block>
+
+<br>
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th>Discount Event ID</th>
+        <th>Tiêu đề</th>
+        <th>Thời gian bắt đầu</th>
+        <th>Thời gian kết thúc</th>
+        <th>Mức giảm giá</th>
+        <th>Chi tiết</th>
+        <th>Sửa</th>
+        <th>Xoá</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="item : ${discountEvent}">
+        <tr>
+            <td th:text="${item.id}"></td>
+            <td th:text="${item.tieuDe}"></td>
+            <td th:text="${item.thoiGianBd}"></td>
+            <td th:text="${item.thoiGianKt}"></td>
+            <td th:text="${item.mucGiamGia}"></td>
+            <td th:text="${item.chiTiet}"></td>
+            <td><a class="btn btn-outline-secondary" th:href="@{'/edit-discountEvent'(id=${item.id})}">Sửa</a></td>
+            <td><a class="btn btn-outline-secondary" th:href="@{'/delete-discountEvent'(id=${item.id})}">Xoá</a></td>
+        </tr>
+    </th:block>
+    </tbody>
+</table>
+
+</body>
+</html>
